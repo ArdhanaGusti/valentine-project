@@ -6,7 +6,7 @@ export default function ValentinePage() {
     const { name } = useParams();
     const personName =
         name?.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) || "My Love";
-    
+
     const musicRef = useRef(null);
     const noBtnRef = useRef(null);
     const canvasRef = useRef(null);
@@ -75,19 +75,15 @@ export default function ValentinePage() {
 
     return (
         <div className="app-wrapper">
-            {/* Bootstrap CDN */}
-            <link
-                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-                rel="stylesheet"
-            />
+
 
             {/* 🎵 Background Music */}
             {/* <audio ref={musicRef} loop>
-        <source
-          src="https://www.bensound.com/bensound-music/bensound-love.mp3"
-          type="audio/mpeg"
-        />
-      </audio> */}
+                <source
+                    src="https://www.bensound.com/bensound-music/bensound-love.mp3"
+                    type="audio/mpeg"
+                />
+            </audio> */}
 
             {/* 🎊 Confetti */}
             <canvas ref={canvasRef} />
