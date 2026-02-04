@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/valentine/(.*)",
+      "destination": "/"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}
