@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
+import cute from "../assets/cute.webp"
 import ConfettiCanvas from "../components/ConfettiCanvas";
 
 export default function ValentinePage() {
@@ -95,7 +96,7 @@ export default function ValentinePage() {
                             <div className="card text-center p-4">
                                 <div className="card-body">
                                     <img
-                                        src="https://marketplace.canva.com/EAFbDBRADCw/2/0/1600w/canva-meme-cat-heart-cute-shy-embarrassed-YF2-B8J6ZCE.jpg"
+                                        src={cute}
                                         alt="Cute"
                                         className="cute-img mb-3"
                                     />
